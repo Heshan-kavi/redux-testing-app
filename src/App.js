@@ -1,6 +1,4 @@
 import './App.css';
-import Backdrop from './components/Backdrop';
-import Modal from './components/Modal';
 import Todo from './components/Todo';
 
 function App() {
@@ -10,8 +8,6 @@ function App() {
       <Todo text="Take a cup"/>
       <Todo text="Wash the cup"/>
       <Todo text="Add milk to the cup"/>
-      <Modal/>
-      <Backdrop/>
     </div>
   );
 }
