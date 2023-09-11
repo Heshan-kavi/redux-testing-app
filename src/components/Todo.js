@@ -12,6 +12,12 @@ function Todo(props){
 
     function cancelhandler(){
         setModalIsOpen(false);
+        alert("you have successfully canceled the to do item");
+    }
+
+    function confirmhandler(){
+        setModalIsOpen(false);
+        alert("your item is confirmed");
     }
 
     return (
@@ -20,7 +26,7 @@ function Todo(props){
             <div className='actions'>
                 <button className='btn' onClick={deletehandler}>Delete</button>
             </div>
-            {modalIsOpen && <Modal text={props.text} onCancelClick={cancelhandler}/>}
+            {modalIsOpen && <Modal text={props.text} onCancelClick={cancelhandler} onConfirmClick={confirmhandler}/>}
             {modalIsOpen && <Backdrop onCancelClick={cancelhandler}/>}
         </div>
     );
