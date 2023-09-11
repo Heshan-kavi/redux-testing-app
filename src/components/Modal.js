@@ -1,9 +1,9 @@
-function Modal (){
+function Modal (props){
     return (
         <div className="modal">
             <p>Are you sure?</p>
-            <button className="btn btn--alt">cancel</button>
-            <button className="btn">confirm</button>
+            <button className="btn btn--alt" onClick={props.onCancelClick}>cancel</button>
+            <button className="btn" onClick={props.onCancelClick}>confirm</button>
         </div>
     )
 }
