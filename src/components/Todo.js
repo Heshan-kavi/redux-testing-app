@@ -17,7 +17,7 @@ function Todo(props){
 
     function confirmhandler(){
         setModalIsOpen(false);
-        alert("your item is confirmed");
+        alert("your item is confirmed and the overlay will be closed");
     }
 
     return (
